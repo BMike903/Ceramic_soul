@@ -1,5 +1,7 @@
-@use "/src/sass/modern-normalize.min.css";
-@use "/src/sass/fontello.css";
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+
+@import "/src/sass/base/variables.scss";
 
 h1,
 h2,
@@ -51,4 +53,9 @@ img {
 html {
   font-family: "Barlow", sans-serif;
   scroll-behavior: smooth;
+}
+
+span {
+  font-size: 32px;
+  color: $ui-error;
 }
