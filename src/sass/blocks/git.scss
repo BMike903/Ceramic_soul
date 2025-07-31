@@ -1,0 +1,20 @@
+.GIT {
+  &__wrapper {
+    margin-top: 60px;
+  }
+  &__img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .GIT {
+    &__img {
+      display: block;
+      width: 550px;
+      height: 341px;
+      object-fit: cover;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
