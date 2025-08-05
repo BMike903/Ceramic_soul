@@ -1,0 +1,109 @@
+@use "../base/variables.scss" as *;
+
+.footer {
+  padding: 50px 0;
+  background-color: $dark;
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  &__header {
+    color: $light;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $light;
+    &_spaced {
+      margin-top: 40px;
+    }
+  }
+
+  &__input {
+    margin-top: 40px;
+    width: 293px;
+    height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $ui-active;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid $ui-active;
+  }
+  &__check-block {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    a {
+      margin-left: 3px;
+      text-decoration: none;
+      color: #a22dc6;
+    }
+  }
+  &__checkbox {
+    margin-right: 15px;
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__links {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 66px;
+    ul {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 0;
+    }
+    a {
+      color: $light;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    margin-top: 40px;
+    &-list {
+      padding: 0;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+    }
+    span {
+      font-size: 24px;
+      color: $light;
+    }
+  }
+
+  &__copyright {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $light;
+  }
+}
