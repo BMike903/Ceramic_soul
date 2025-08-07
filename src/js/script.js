@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 
 import "/src/sass/style.scss";
 
+//swiper
 try {
   new Swiper(".works__slider", {
     modules: [Navigation, Pagination],
@@ -49,3 +50,21 @@ close.addEventListener("click", () => {
   menu.classList.remove("header__menu_active");
   document.body.style.overflow = "";
 });
+
+//tabs in catalog
+try {
+  const tabs = document.querySelectorAll(".catalog__tab");
+  const contents = document.querySelectorAll(".catalog__content-item");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+      contents.forEach((c) => (c.style.display = "none"));
+
+      tab.classList.add("catalog__tab_active");
+      contents[index].style.display = "block";
+    });
+  });
+
+  contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+} catch (e) {}
