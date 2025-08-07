@@ -1,6 +1,6 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
-
+// Swiper
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -34,3 +34,18 @@ try {
     },
   });
 } catch (e) {}
+
+// header menu
+const burger = document.querySelector(".burger"),
+  close = document.querySelector(".header__menu-close"),
+  menu = document.querySelector(".header__menu");
+
+burger.addEventListener("click", () => {
+  menu.classList.add("header__menu_active");
+  document.body.style.overflow = "hidden";
+});
+
+close.addEventListener("click", () => {
+  menu.classList.remove("header__menu_active");
+  document.body.style.overflow = "";
+});
