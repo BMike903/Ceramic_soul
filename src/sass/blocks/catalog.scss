@@ -103,6 +103,7 @@
       }
     }
     &__card {
+      overflow: hidden;
       width: 340px;
       min-height: 275px;
       &-img {
@@ -133,14 +134,6 @@
       &-item {
         column-gap: 83px;
         row-gap: 25px;
-      }
-    }
-    &__card {
-      width: 250px;
-      min-height: 285px;
-      &-img {
-        height: 180px;
-        object-fit: cover;
       }
     }
   }
