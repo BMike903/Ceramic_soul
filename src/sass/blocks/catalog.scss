@@ -1,7 +1,7 @@
 @use "../base/variables.scss" as *;
 
 .catalog {
-  margin-top: 50px;
+  padding-top: 50px;
   &__title {
     margin-top: 60px;
   }
@@ -15,9 +15,9 @@
     padding: 13px 35px;
   }
   &__tab {
+    position: relative;
     border: none;
     padding: 0;
-    position: relative;
     background: none;
     font-weight: 500;
     font-size: 20px;
@@ -33,17 +33,15 @@
     }
   }
   &__content {
+    margin-top: 60px;
     &-item {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin: 60px auto 60px auto;
       row-gap: 20px;
     }
   }
   &__card {
-    background: $light;
-    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     &-img {
       width: 100%;
     }
@@ -57,12 +55,93 @@
       font-weight: 500;
       font-size: 16px;
       color: #000;
+      font-style: normal;
+      line-height: normal;
     }
     &-price {
       margin-top: 8px;
       font-weight: 500;
       font-size: 16px;
       color: #000;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    &__tabs {
+      width: 480px;
+    }
+    &__content {
+      position: relative;
+      padding: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 85px;
+        height: 1px;
+        background-color: $dark;
+        top: 0px;
+        left: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 105px;
+        background-color: $dark;
+        top: 0px;
+        left: 0;
+      }
+      &-item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+    &__card {
+      width: 340px;
+      min-height: 275px;
+      &-img {
+        height: 198px;
+        object-fit: cover;
+      }
+      &-price {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog {
+    &__content {
+      padding: 25px;
+      &-item {
+        gap: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .catalog {
+    &__content {
+      &-item {
+        column-gap: 83px;
+        row-gap: 25px;
+      }
+    }
+    &__card {
+      width: 250px;
+      min-height: 285px;
+      &-img {
+        height: 180px;
+        object-fit: cover;
+      }
     }
   }
 }
