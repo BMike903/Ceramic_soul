@@ -70,7 +70,7 @@
       align-items: flex-start;
     }
     &__card {
-      height: 394px;
+      min-height: 394px;
       width: 520px;
     }
     &__img {
@@ -83,9 +83,6 @@
 @media screen and (min-width: 1920px) {
   .blog {
     padding-top: 40px;
-    &__wrapper {
-      align-items: stretch;
-    }
     &__card {
       width: 670px;
     }
