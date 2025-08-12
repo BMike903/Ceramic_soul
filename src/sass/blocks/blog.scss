@@ -62,3 +62,36 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__wrapper {
+      gap: 50px;
+      align-items: flex-start;
+    }
+    &__card {
+      height: 394px;
+      width: 520px;
+    }
+    &__img {
+      height: 241px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .blog {
+    padding-top: 40px;
+    &__wrapper {
+      align-items: stretch;
+    }
+    &__card {
+      width: 670px;
+    }
+    &__img {
+      height: 241px;
+      object-fit: cover;
+    }
+  }
+}
