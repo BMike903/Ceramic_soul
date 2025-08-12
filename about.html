@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for Ceramic soul brand" />
+    <meta name="author" content="Awesome student" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="about">
+      <div class="container">
+        <header class="header">
+          <div class="header__menu">
+            <div class="header__menu-close"><span></span><span></span></div>
+            <nav class="header__menu-nav">
+              <ul>
+                <li><a href="#" class="header__menu-link">catalog</a></li>
+                <li><a href="#" class="header__menu-link">blog</a></li>
+                <li><a href="#" class="header__menu-link">about</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__top">
+            <div class="burger"><span></span><span></span><span></span></div>
+            <a href="#" class="header__logo">
+              <img src="/src/logo/logo.png" alt="logo" />
+            </a>
+            <div class="header__icons">
+              <a href="#"><span class="icon-search" /></a>
+              <a href="#"><span class="icon-shopping-bag" /></a>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#" class="header__link">catalog</a></li>
+              <li><a href="#" class="header__link">blog</a></li>
+              <li><a href="#" class="header__link">about</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <h1 class="title-h2 about__title">where it all began</h1>
+
+        <div class="about__wrapper pure-g">
+          <img
+            src="/src/img/about/crafts.jpg"
+            alt="crafts"
+            class="about__img pure-u-1 pure-u-xl-1-2"
+          />
+          <div class="about__text pure-u-1 pure-u-xl-1-2">
+            <p>
+              Our small pottery workshop began as a simple passion project,
+              rooted in a love for handmade artistry and traditional
+              craftsmanship. What started with a single wheel and a few lumps of
+              clay has grown into a cozy creative space where ideas take shape
+              and stories are told through every piece. Inspired by timeless
+              techniques and the beauty of natural materials, we’ve built a
+              place where both beginners and experienced artists can come
+              together, share their skills, and celebrate the art of pottery.
+              Each creation reflects our journey—shaped by hand, fired with
+              care, and made to be cherished.
+            </p>
+            <br />
+            <p>
+              Over the years, our workshop has become more than just a place to
+              create—it’s a community. Friends, families, and curious visitors
+              gather here to learn, connect, and experience the joy of working
+              with clay. From intimate masterclasses to collaborative projects,
+              we believe in the power of handmade art to bring people together
+              and spark creativity in unexpected ways.
+            </p>
+            <br />
+            <p>
+              Every piece that leaves our studio carries a bit of our story,
+              blending tradition with personal expression. Whether it’s a simple
+              cup or an intricate vase, our ceramics are crafted to be both
+              beautiful and functional, adding warmth and authenticity to any
+              space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="GIT">
+      <div class="container">
+        <h2 class="title-h2">get in touch</h2>
+        <div class="GIT__wrapper pure-g">
+          <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
+            <img src="src/img/form/tea.jpg" alt="tea" class="GIT__img" />
+          </div>
+          <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5">
+            <form action="#" class="GIT__form">
+              <fieldset class="GIT__fieldset">
+                <div class="GIT__input-block">
+                  <label class="GIT__label" for="name">Name</label>
+                  <input
+                    class="GIT__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="GIT__input-block">
+                  <label class="GIT__label" for="email">Email</label>
+                  <input
+                    class="GIT__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <label class="GIT__label" for="question">Your question</label>
+              <textarea
+                class="GIT__textarea"
+                name="question"
+                id="question"
+                placeholder="Question"
+                required
+              ></textarea>
+
+              <label for="checkbox" class="GIT__label GIT__check-block">
+                <input
+                  required
+                  class="GIT__checkbox"
+                  type="checkbox"
+                  id="checkbox"
+                />
+                I agree with the <a href="#">terms</a>
+              </label>
+              <button class="btn-send GIT__btn">send request</button>
+            </form>
+          </div>
+        </div>
+        <img src="/src/img/form/vase.png" alt="vase" class="GIT__icon" />
+      </div>
+    </section>
+
+    <footer class="footer footer__spaced">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__newsletter">
+            <h2 class="footer__header">newsletter</h2>
+            <p class="footer__text footer__text_spaced">
+              Keep up to date with news and promotions
+            </p>
+            <form action="#" class="footer__form">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Enter your e-mail"
+                required
+              />
+              <label
+                for="footer__checkbox"
+                class="footer__text footer__check-block"
+              >
+                <input
+                  required
+                  type="checkbox"
+                  class="footer__checkbox"
+                  id="checkbox"
+                />
+                I agree with the <a href="#">terms</a>
+              </label>
+              <button class="btn-submit footer__btn">submit</button>
+            </form>
+          </div>
+
+          <div class="footer__links">
+            <div class="footer__links-block">
+              <h2 class="footer__header">Discover</h2>
+              <ul>
+                <li class="footer__link"><a href="#">About Us</a></li>
+                <li class="footer__link"><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer__links-block">
+              <h2 class="footer__header">Shopping</h2>
+              <ul>
+                <li class="footer__link"><a href="#">Catalog</a></li>
+              </ul>
+            </div>
+            <div class="footer__links-block">
+              <h2 class="footer__header">Information</h2>
+              <ul>
+                <li class="footer__link">
+                  <a href="#">Terms and Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__social">
+            <h2 class="footer__header">follow us</h2>
+            <ul class="footer__social-list">
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-pinterest-circled"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">© Copyright 2025, Ceramic soul</div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/script.js"></script>
+  </body>
+</html>

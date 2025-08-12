@@ -1,0 +1,67 @@
+@use "../base/variables.scss" as *;
+
+.about {
+  padding-top: 50px;
+  &__title {
+    padding-top: 60px;
+  }
+  &__wrapper {
+    padding-top: 60px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    object-fit: cover;
+    width: 340px;
+    height: 234px;
+    /* margin: 0 auto; */
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $dark;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    &__wrapper {
+      gap: 35px;
+    }
+    &__img {
+      width: 600px;
+      height: 412px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    &__wrapper {
+      gap: 20px;
+    }
+    &__img {
+      width: 550px;
+      height: 378px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    &__title {
+      padding-top: 100px;
+    }
+    &__wrapper {
+      padding-top: 100px;
+    }
+    &__img {
+      width: auto;
+      height: auto;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
