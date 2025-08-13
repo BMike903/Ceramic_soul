@@ -71,9 +71,9 @@ try {
   contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) {}
 
-//form validation
+//get in touch form validation
 try {
-  const validator = new JustValidate("form");
+  const validator = new JustValidate(".GIT__form");
   validator
     .addField("#name", [
       {
@@ -120,6 +120,43 @@ try {
         errorsContainer: document
           .querySelector("#question")
           .parentElement.parentElement.querySelector(".checkbox-error-message"),
+      }
+    );
+} catch (e) {}
+
+//footer form validation
+try {
+  const validatorFooter = new JustValidate(".footer__form");
+  validatorFooter
+    .addField(
+      "#footer__email",
+      [
+        {
+          rule: "required",
+        },
+        {
+          rule: "email",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#footer__email")
+          .parentElement.parentElement.querySelector(".footer-error-message"),
+      }
+    )
+    .addField(
+      "#footer__checkbox",
+      [
+        {
+          rule: "required",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#footer__checkbox")
+          .parentElement.parentElement.querySelector(
+            ".footer-checkbox-error-message"
+          ),
       }
     );
 } catch (e) {}

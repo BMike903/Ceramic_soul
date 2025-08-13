@@ -134,9 +134,12 @@
               <input
                 type="email"
                 class="footer__input"
+                id="footer__email"
                 placeholder="Enter your e-mail"
                 required
               />
+              <div class="footer-error-message"></div>
+
               <label
                 for="footer__checkbox"
                 class="footer__text footer__check-block"
@@ -145,10 +148,11 @@
                   required
                   type="checkbox"
                   class="footer__checkbox"
-                  id="checkbox"
+                  id="footer__checkbox"
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="footer-checkbox-error-message"></div>
               <button class="btn-submit footer__btn">submit</button>
             </form>
           </div>
