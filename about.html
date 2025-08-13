@@ -125,6 +125,7 @@
                   />
                 </div>
               </fieldset>
+
               <label class="GIT__label" for="question">Your question</label>
               <textarea
                 class="GIT__textarea"
@@ -133,6 +134,7 @@
                 placeholder="Question"
                 required
               ></textarea>
+              <div class="error-message"></div>
 
               <label for="checkbox" class="GIT__label GIT__check-block">
                 <input
@@ -143,6 +145,8 @@
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
+
               <button class="btn-send GIT__btn">send request</button>
             </form>
           </div>
