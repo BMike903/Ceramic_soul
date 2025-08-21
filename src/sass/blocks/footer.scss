@@ -15,6 +15,9 @@
       list-style: none;
     }
   }
+  &__spaced {
+    margin-top: 60px;
+  }
   &__header {
     color: $light;
     font-style: normal;
@@ -117,9 +120,6 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    &__spaced {
-      margin-top: 60px;
-    }
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
